@@ -15,4 +15,5 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`
   ],
-};
+  pathPrefix: `superstars`
+}
