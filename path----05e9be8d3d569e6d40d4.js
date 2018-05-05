@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{124:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"A computer programmer's private thoughts...",email:"shibata@fata.io"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----05e9be8d3d569e6d40d4.js.map

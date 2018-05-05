@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{123:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"Hello",email:"shibata@fata.io"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----a5efbb4af5f9a84a6e48.js.map

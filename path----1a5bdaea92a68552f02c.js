@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{124:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"My personal daily thinking",email:"shibata@fata.io"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----1a5bdaea92a68552f02c.js.map

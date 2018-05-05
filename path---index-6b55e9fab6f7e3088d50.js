@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{305:function(t,e){t.exports={data:{site:{siteMetadata:{title:"SUPERSTARS",description:"Hello! we are SUPERSTARS"}}},pathContext:{}}}});
+//# sourceMappingURL=path---index-6b55e9fab6f7e3088d50.js.map
