@@ -25,5 +25,5 @@ module.exports = {
       }
     }
   ],
-  pathPrefix: `superstars`
+  // pathPrefix: `superstars`
 }

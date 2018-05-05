@@ -7,7 +7,7 @@
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public -b gh-pages"
+    "deploy": "gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^1.9.259",
