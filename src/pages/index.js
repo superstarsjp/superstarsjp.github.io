@@ -45,6 +45,8 @@ export default class Index extends React.PureComponent {
         <Cell min={3*160}>
           <Item>
             Hair Salons in 1er arr Paris and Daikanyama Tokyo.<br/>
+            東京 代官山とパリの1区にあるヘアサロン.<br/>
+            🇫🇷パリで働きたい美容師さん誰かいませんか？
           </Item>
           <Item title='Tokyo'>
             <Link href='http://goo.gl/maps/Fjqbs'>
