@@ -60,7 +60,7 @@ const Container = styled.div`
 `
 export default ({ data, children, i18nMessages }) => {
   const { site: { siteMetadata: { languages, title, description, email } }} = data
-  const url = location.pathname
+  const url = typeof window !== 'undefined' ? location.pathname : ''
   const { langs, defaultLangKey } = languages
   const langKey = getCurrentLangKey(langs, defaultLangKey, url)
 
