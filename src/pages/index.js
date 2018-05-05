@@ -28,17 +28,17 @@ const EmailInput = styled.input`
   width: 160px;
 `
 export default class Index extends React.PureComponent {
-  constructor(args) {
-    super(args);
-    if(typeof window !== 'undefined') {
-      const { langs, defaultLangKey } = args.data.site.siteMetadata.languages
-      const langKey = getUserLangKey(langs, defaultLangKey)
-      if(langKey !== 'en') {
-        const homeUrl = withPrefix(`/${langKey}/`)
-        window.___history.replace(homeUrl)
-      }
-    }
-  }
+  // constructor(args) {
+  //   super(args);
+  //   if(typeof window !== 'undefined') {
+  //     const { langs, defaultLangKey } = args.data.site.siteMetadata.languages
+  //     const langKey = getUserLangKey(langs, defaultLangKey)
+  //     if(langKey !== 'en') {
+  //       const homeUrl = withPrefix(`/${langKey}/`)
+  //       window.___history.replace(homeUrl)
+  //     }
+  //   }
+  // }
   render() {
     return (
       <Grid gutter={10}>

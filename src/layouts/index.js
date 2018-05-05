@@ -8,10 +8,11 @@ import 'intl'
 import Link from 'gatsby-link'
 
 injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
   @import url(https://afeld.github.io/emoji-css/emoji.css);
   body {
     margin: 0;
-    font-family: courier, monospace;
+    font-family: 'Source Code Pro', monospace;
     font-size: 13px;
     line-height: 20px;
     color: black;
