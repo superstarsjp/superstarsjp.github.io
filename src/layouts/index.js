@@ -72,9 +72,9 @@ export default ({ data, children, i18nMessages }) => {
     >
       <Container>
         <LangSwitch>
-          { langKey !== 'en' && <Lang to={`/`}>En</Lang> }
-          { langKey !== 'ja' && <Lang to={`/ja/`}>日</Lang> }
-          { langKey !== 'fr' && <Lang to={`/fr/`}>Fr</Lang> }
+          <Lang to={`/`}>En</Lang>
+          <Lang to={`/ja/`}>日</Lang>
+          <Lang to={`/fr/`}>Fr</Lang>
         </LangSwitch>
         <Grid gutter={10}>
           <Cell min={3*160}>
