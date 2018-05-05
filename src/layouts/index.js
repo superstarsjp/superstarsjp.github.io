@@ -11,7 +11,7 @@ injectGlobal`
   @import url(https://afeld.github.io/emoji-css/emoji.css);
   body {
     margin: 0;
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 13px;
     line-height: 20px;
     color: black;
@@ -41,6 +41,7 @@ const LogoContainer = styled.div`
 `
 const Logo = styled.h1`
   font-size: 13px;
+  font-weight: normal;
   color: red;
   margin:0;
   padding:0;
