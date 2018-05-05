@@ -1,8 +1,11 @@
+const languages = require('./src/data/languages')
+
 module.exports = {
   siteMetadata: {
     title: `SUPERSTARS`,
     email: `info@superstars.jp`,
-    description: `Hello! we are SUPERSTARS`
+    description: `Hello! we are SUPERSTARS`,
+    languages
   },
   plugins: [
     {
@@ -13,7 +16,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false
+      }
+    }
   ],
   pathPrefix: `superstars`
 }

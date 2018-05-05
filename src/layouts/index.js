@@ -49,7 +49,6 @@ export default ({ data, children }) => {
           <Item>HAIR SALON</Item>
         </Cell>
         <Cell min={3*90}>
-          <Item>tokyo, paris</Item>
         </Cell>
       </Grid>
       { children() }
