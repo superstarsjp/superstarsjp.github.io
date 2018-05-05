@@ -2,6 +2,10 @@ import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 import { Grid, Cell } from 'rgx'
 import { Item } from '../component'
+import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
+import { IntlProvider } from 'react-intl'
+import 'intl'
+import Link from 'gatsby-link'
 
 injectGlobal`
   @import url(https://afeld.github.io/emoji-css/emoji.css);
@@ -22,9 +26,25 @@ injectGlobal`
     }
   }
 `
+const LangSwitch = styled.div`
+  position: absolute;
+  right: 6%;
+  top: 2%;
+  z-index: 1;
+`
+const Lang = styled(Link)`
+  margin-right: 1em;
+`
+const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 const Logo = styled.h1`
   font-size: 13px;
   color: red;
+  margin:0;
+  padding:0;
+  margin-right: 1em;
   margin-bottom: 3em;
 `
 const Container = styled.div`
@@ -37,22 +57,38 @@ const Container = styled.div`
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 `
-export default ({ data, children }) => {
-  const { site: { siteMetadata: { title, description, email } }} = data
+export default ({ data, children, i18nMessages }) => {
+  const { site: { siteMetadata: { languages, title, description, email } }} = data
+  const url = location.pathname
+  const { langs, defaultLangKey } = languages
+  const langKey = getCurrentLangKey(langs, defaultLangKey, url)
+
   return (
-    <Container>
-      <Grid gutter={10}>
-        <Cell min={3*160}>
-          <Logo>{title}</Logo>
-        </Cell>
-        <Cell min={3*90}>
-          <Item>HAIR SALON</Item>
-        </Cell>
-        <Cell min={3*90}>
-        </Cell>
-      </Grid>
-      { children() }
-    </Container>
+    <IntlProvider
+      locale={langKey}
+      messages={i18nMessages}
+    >
+      <Container>
+        <LangSwitch>
+          { langKey !== 'en' && <Lang to={`/`}>En</Lang> }
+          { langKey !== 'ja' && <Lang to={`/ja/`}>日</Lang> }
+          { langKey !== 'fr' && <Lang to={`/fr/`}>Fr</Lang> }
+        </LangSwitch>
+        <Grid gutter={10}>
+          <Cell min={3*160}>
+            <LogoContainer>
+              <Logo>{title}</Logo>
+              <span>HAIR SALON</span>
+            </LogoContainer>
+          </Cell>
+          <Cell min={3*90}>
+          </Cell>
+          <Cell min={3*90}>
+          </Cell>
+        </Grid>
+        { children() }
+      </Container>
+    </IntlProvider>
   )
 }
 export const query = graphql`
@@ -62,6 +98,10 @@ export const query = graphql`
         title
         description
         email
+        languages {
+          defaultLangKey
+          langs
+        }
       }
     }
   }

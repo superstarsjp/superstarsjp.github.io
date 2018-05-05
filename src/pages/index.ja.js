@@ -33,7 +33,7 @@ export default ({ data }) => {
           東京 代官山とパリの1区にあるヘアサロン.<br/>
           🇫🇷パリで働きたい美容師さん誰かいませんか？
         </Item>
-        <Item title='Tokyo'>
+        <Item title='東京店'>
           <Link href='http://goo.gl/maps/Fjqbs'>
             150-0021
             東京都渋谷区恵比寿西 1-24-7
@@ -60,7 +60,7 @@ export default ({ data }) => {
           パーマ 7000円~<br/>
           トリートメント 2000円~<br/>
         </Item>
-        <Item title='Paris'>
+        <Item title='パリ店'>
           <Link href='http://goo.gl/maps/klacH'>
             15 Rue d'Argenteuil 75001 Paris, France
           </Link>

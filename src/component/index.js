@@ -14,7 +14,7 @@ export const Right = styled.div`
   align-items: flex-end;
 `
 export const Link = styled.a.attrs({
-  target: '_blank',
+  target: props => props.target || '_blank',
   children: props => props.children || props.href
 })`
 `
