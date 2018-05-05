@@ -121,9 +121,9 @@ export default ({ data, children }) => {
             🇫🇷パリで働きたい美容師さん誰かいませんか？
           </Item>
           <Item title='Tokyo'>
-            <a href='http://goo.gl/maps/Fjqbs'>
+            <Link href='http://goo.gl/maps/Fjqbs'>
               1-24-7 Ebisunishi Shibuyaku 150-0021 Tokyo,Japan
-            </a>
+            </Link>
             <br/>
             Daikanyama Station,Ebisu Station
             <br/>
@@ -146,9 +146,9 @@ export default ({ data, children }) => {
             Treatment 2000yen~<br/>
           </Item>
           <Item title='Paris'>
-            <a href='http://goo.gl/maps/klacH'>
+            <Link href='http://goo.gl/maps/klacH'>
               15 Rue d'Argenteuil 75001 Paris, France
-            </a>
+            </Link>
             <br/>
             Métro Tuileries,Métro Pyramides
             <br/>
