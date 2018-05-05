@@ -8,12 +8,13 @@ const SubscribeButton = styled.input`
   display: inline;
   border: none;
   font: inherit;
-  background-color: rgba(255,0,0,0.35);
-  color: black;
-  text-decoration: none;
+  color: red;
+  text-decoration: underline;
+  background-color: transparent;
   &:hover {
-    background-color: rgba(255,0,0,1);
+    background-color: red;
     color: white;
+    text-decoration: none;
   }
 `
 const EmailInput = styled.input`
@@ -73,9 +74,9 @@ export default ({ data }) => {
           <br/>
           電話番号
           <Emoji name='telephone_receiver'/>
-          <a href='tel:33-142603710'>01.42.60.37.10</a>
+          <a href='tel:33-142603710'>+33-1.42.60.37.10</a>
           <br/>
-          FAX 01.42.60.39.04
+          FAX +33-1.42.60.39.04
           <br/>
           お問い合わせメールアドレス{' '}
           <a href='mailto:paris@superstars.jp'>paris@superstars.jp</a>
@@ -105,7 +106,7 @@ export default ({ data }) => {
         </Item>
       </Cell>
       <Cell min={3*90}>
-        <Item>
+        <Item title='更新情報'>
           <form 
             action='//superstars.us10.list-manage.com/subscribe/post?u=bb759fc6f988fc3409d847443&amp;id=13e60509f6'
             method='post'

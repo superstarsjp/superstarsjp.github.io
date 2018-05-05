@@ -10,12 +10,13 @@ const SubscribeButton = styled.input`
   display: inline;
   border: none;
   font: inherit;
-  background-color: rgba(255,0,0,0.35);
-  color: black;
-  text-decoration: none;
+  color: red;
+  text-decoration: underline;
+  background-color: transparent;
   &:hover {
-    background-color: rgba(255,0,0,1);
+    background-color: red;
     color: white;
+    text-decoration: none;
   }
 `
 const EmailInput = styled.input`
@@ -61,9 +62,9 @@ export default class Index extends React.PureComponent {
             <br/>
             Phone
             <Emoji name='telephone_receiver'/>
-            <a href='tel:+81-3-5428-0039'>03-5428-0039</a>
+            <a href='tel:+81-3-5428-0039'>+81-3-5428-0039</a>
             <br/>
-            Facsimile 03-5428-0049
+            Facsimile +81-3-5428-0049
             <br/>
             Email <a href='mailto:tokyo@superstars.jp'>tokyo@superstars.jp</a>
             <br/>
@@ -86,9 +87,9 @@ export default class Index extends React.PureComponent {
             <br/>
             Phone
             <Emoji name='telephone_receiver'/>
-            <a href='tel:33-142603710'>01.42.60.37.10</a>
+            <a href='tel:33-142603710'>+33-1.42.60.37.10</a>
             <br/>
-            Facsimile 01.42.60.39.04
+            Facsimile +33-1.42.60.39.04
             <br/>
             Email <a href='mailto:paris@superstars.jp'>paris@superstars.jp</a>
             <br/>
@@ -117,7 +118,7 @@ export default class Index extends React.PureComponent {
           </Item>
         </Cell>
         <Cell min={3*90}>
-          <Item>
+          <Item title='Updates'>
             <form 
               action='//superstars.us10.list-manage.com/subscribe/post?u=bb759fc6f988fc3409d847443&amp;id=13e60509f6'
               method='post'

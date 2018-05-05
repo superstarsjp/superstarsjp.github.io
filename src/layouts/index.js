@@ -18,12 +18,12 @@ injectGlobal`
     color: black;
   }
   a {
-    background-color: rgba(255,0,0,0.35);
-    color: black;
-    text-decoration: none;
+    color: red;
+    text-decoration: underline;
     &:hover {
       background-color: rgba(255,0,0,1);
       color: white;
+      text-decoration: none;
     }
   }
 `
@@ -38,7 +38,8 @@ const Lang = styled(Link)`
 `
 const LogoContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-bottom: 3em;
 `
 const Logo = styled.h1`
   font-size: 13px;
@@ -47,7 +48,6 @@ const Logo = styled.h1`
   margin:0;
   padding:0;
   margin-right: 1em;
-  margin-bottom: 3em;
 `
 const Container = styled.div`
   position: absolute;
@@ -78,10 +78,10 @@ export default ({ data, children, i18nMessages }) => {
         </LangSwitch>
         <Grid gutter={10}>
           <Cell min={3*160}>
-            <LogoContainer>
-              <Logo>{title}</Logo>
-              <span>HAIR SALON</span>
-            </LogoContainer>
+              <LogoContainer>
+                <Logo>{title}</Logo>
+                <span>HAIR SALON</span>
+              </LogoContainer>
           </Cell>
           <Cell min={3*90}>
           </Cell>
