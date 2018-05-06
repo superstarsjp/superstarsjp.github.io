@@ -1,18 +1,30 @@
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
-import { Grid, Cell } from 'rgx'
+import { Flex, Box } from 'grid-styled'
 import { Item } from '../component'
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
 import { IntlProvider } from 'react-intl'
 import 'intl'
 import Link from 'gatsby-link'
+import { addLocaleData, FormattedMessage } from 'react-intl'
+
+import messages from '../data/messages'
+import ja from 'react-intl/locale-data/ja'
+import 'intl/locale-data/jsonp/ja'
+import en from 'react-intl/locale-data/en'
+import 'intl/locale-data/jsonp/en'
+import fr from 'react-intl/locale-data/fr'
+import 'intl/locale-data/jsonp/fr'
+
+addLocaleData(ja)
+addLocaleData(en)
+addLocaleData(fr)
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
   @import url(https://afeld.github.io/emoji-css/emoji.css);
   body {
     margin: 0;
-    font-family: 'Source Code Pro', monospace;
+    font-family: verdana, courier, monospace;
     font-size: 13px;
     line-height: 20px;
     color: black;
@@ -33,9 +45,12 @@ const LangSwitch = styled.div`
   top: 2%;
   z-index: 1;
 `
-const Lang = styled(Link)`
-  margin-right: 1em;
-`
+const Lang = ({ disabled, ...props }) => {
+  const Comp = (disabled ? styled.span : styled(Link))`
+    margin-right: 1em;
+  `
+  return <Comp {...props}/>
+}
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -59,39 +74,36 @@ const Container = styled.div`
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 `
-export default ({ data, children, i18nMessages }) => {
-  const { site: { siteMetadata: { languages, title, description, email } }} = data
-  const url = typeof window !== 'undefined' ? location.pathname : ''
-  const { langs, defaultLangKey } = languages
-  const langKey = getCurrentLangKey(langs, defaultLangKey, url)
-
-  return (
-    <IntlProvider
-      locale={langKey}
-      messages={i18nMessages}
-    >
-      <Container>
-        <LangSwitch>
-          <Lang to={`/`}>En</Lang>
-          <Lang to={`/ja/`}>日</Lang>
-          <Lang to={`/fr/`}>Fr</Lang>
-        </LangSwitch>
-        <Grid gutter={10}>
-          <Cell min={3*160}>
+export default class Layout extends React.Component {
+  render() {
+    const { data, children, location } = this.props
+    const { site: { siteMetadata: { languages, title, description, email } }} = data
+    const { langs, defaultLangKey } = languages
+    const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname)
+    return (
+      <IntlProvider
+        locale={langKey}
+        messages={messages[langKey]}
+      >
+        <Container>
+          <LangSwitch>
+            <Lang disabled={langKey === 'en'} to='/'>En</Lang>
+            <Lang disabled={langKey === 'ja'} to='/ja/'>日</Lang>
+            <Lang disabled={langKey === 'fr'} to='/fr/'>Fr</Lang>
+          </LangSwitch>
+          <Flex>
+            <Box px={10} width={1}>
               <LogoContainer>
                 <Logo>{title}</Logo>
-                <span>HAIR SALON</span>
+                <span><FormattedMessage id='HAIR SALON' /></span>
               </LogoContainer>
-          </Cell>
-          <Cell min={3*90}>
-          </Cell>
-          <Cell min={3*90}>
-          </Cell>
-        </Grid>
-        { children() }
-      </Container>
-    </IntlProvider>
-  )
+            </Box>
+          </Flex>
+          { children() }
+        </Container>
+      </IntlProvider>
+    )
+  }
 }
 export const query = graphql`
   query LayoutQuery {
