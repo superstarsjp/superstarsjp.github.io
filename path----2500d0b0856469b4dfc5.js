@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{265:function(a,t){a.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"The place for organizing my brain by describing my random thoughts roughly :)",email:"shibata@fata.io"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----2500d0b0856469b4dfc5.js.map

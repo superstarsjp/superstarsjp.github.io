@@ -1,2 +1,0 @@
-webpackJsonp([89450997894629],{336:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata"}},markdownRemark:{excerpt:"今日から日記を書こうと思う。 毎日がこんがらがってしまっているので。",htmlAst:{type:"root",children:[{type:"element",tagName:"p",properties:{},children:[{type:"text",value:"今日から日記を書こうと思う。"},{type:"element",tagName:"br",properties:{},children:[]},{type:"text",value:"\n毎日がこんがらがってしまっているので。"}]}],data:{quirksMode:!1}},frontmatter:{title:"test diary entry(1)",subtitle:""}}},pathContext:{slug:"test"}}}});
-//# sourceMappingURL=path---test-bce84578a89876de02ae.js.map

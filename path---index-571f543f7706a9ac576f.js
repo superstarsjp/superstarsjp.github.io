@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{335:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"A computer programmer's private thoughts..."}},allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"2018-04-17"},id:"/Users/shibata/proj/yusukeshibata/src/docs/2018-04-17.md absPath of file >>> MarkdownRemark",frontmatter:{status:"",title:"今までを振り返って",subtitle:"",date:"17 April, 2018"},excerpt:"…"}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-571f543f7706a9ac576f.js.map

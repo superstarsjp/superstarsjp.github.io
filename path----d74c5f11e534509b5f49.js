@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{124:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Yusuke Shibata",description:"悩みを乱雑に羅列することで脳内を整理するための場所",email:"shibata@fata.io"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----d74c5f11e534509b5f49.js.map
