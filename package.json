@@ -7,9 +7,11 @@
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public -b master"
+    "deploy": "gh-pages -d public -b master",
+    "postdeploy": "CF_API_EMAIL=shibata@fata.io CF_API_KEY=none cfcli -d superstars.jp purge"
   },
   "dependencies": {
+    "cloudflare-cli": "^2.4.0",
     "gatsby": "^1.9.259",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-i18n": "^0.4.2",

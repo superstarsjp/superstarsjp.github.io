@@ -92,10 +92,9 @@ export default class Index extends React.Component {
         <a href='mailto:paris@superstars.jp'>paris@superstars.jp</a>
         <br/>
         <br/>
-        <FormattedMessage id='Cut'/> 65<FormattedMessage id='euro'/>~<br/>
-      <FormattedMessage id='Color'/> 60<FormattedMessage id='euro'/>~<br/>
-      <FormattedMessage id='Permanent'/> 70<FormattedMessage id='euro'/>~<br/>
-      <FormattedMessage id='Treatment'/> 20<FormattedMessage id='euro'/>~<br/>
+        <FormattedMessage id='Cut'/> 80<FormattedMessage id='euro'/>~<br/>
+      <FormattedMessage id='Color'/> 70<FormattedMessage id='euro'/>~<br/>
+      <FormattedMessage id='Permanent'/> 80<FormattedMessage id='euro'/>~<br/>
       </Item>
       </Box>
       <Box px={10} width={[1, 0.5, 90/340]}>
