@@ -13,6 +13,7 @@ export const Link = styled.a.attrs({
   target: props => props.target || '_blank',
   children: props => props.children || props.href
 })`
+  word-break:break-word;
 `
 const Label = styled(Box)`
   overflow: hidden;
