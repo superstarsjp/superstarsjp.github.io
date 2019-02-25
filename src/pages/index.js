@@ -1,4 +1,4 @@
-import React, { createElement } from 'react'
+import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 import { Flex, Box } from 'grid-styled'
 import { Emoji, Item, Link } from '../component'
@@ -77,7 +77,7 @@ export default class Index extends React.Component {
         <FormattedMessage id='Metro Tuileries, Metro Pyramids'/>
         <br/>
         <FormattedMessage id='Closed'/>{' '}
-        <FormattedMessage id='Sunday'/>
+        <FormattedMessage id='Monday'/>
         <br/>
         11:00-19:00
         <br/>
