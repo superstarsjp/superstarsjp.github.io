@@ -1,11 +1,8 @@
-const languages = require('./src/data/languages')
-
 module.exports = {
   siteMetadata: {
     title: `SUPERSTARS`,
     email: `info@superstars.jp`,
-    description: `Hello! we are SUPERSTARS`,
-    languages
+    description: `Hello! we are SUPERSTARS`
   },
   plugins: [
     {
@@ -15,8 +12,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
-  ],
-  // pathPrefix: `superstars`
+    `gatsby-plugin-styled-components`
+  ]
 }

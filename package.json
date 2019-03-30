@@ -11,22 +11,15 @@
     "postdeploy": "CF_API_EMAIL=shibata@fata.io cfcli -d superstars.jp purge"
   },
   "dependencies": {
-    "cloudflare-cli": "^2.4.0",
-    "gatsby": "^1.9.259",
-    "gatsby-link": "^1.6.44",
-    "gatsby-plugin-i18n": "^0.4.2",
-    "gatsby-plugin-styled-components": "^2.0.11",
-    "gatsby-source-filesystem": "^1.5.35",
-    "gatsby-transformer-remark": "^1.7.40",
-    "gh-pages": "^1.1.0",
-    "github-reaction-button": "^1.1.15",
-    "grid-styled": "^4.1.0",
-    "hack": "^0.8.1",
-    "intl": "^1.2.5",
-    "ptz-i18n": "^0.4.0",
-    "react-intl": "^2.4.0",
-    "rehype-react": "^3.0.2",
-    "rgx": "^0.2.4",
-    "styled-components": "^3.2.6"
+    "cloudflare-cli": "^3.2.2",
+    "gatsby": "^2.3.3",
+    "gatsby-link": "^2.0.16",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gh-pages": "^2.0.1",
+    "grid-styled": "^5.0.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "styled-components": "^4.2.0"
   }
 }

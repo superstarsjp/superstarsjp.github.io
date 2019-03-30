@@ -44,19 +44,19 @@ const EmailInput = styled.input`
 export default class Index extends React.Component {
   render() {
     return (
-      <Layout lang='fr'>
+      <Layout lang='en'>
         <Flex>
           <Box px={10} width={1}>
             <LogoContainer>
               <Logo>SUPERSTARS</Logo>
-              <span>Salons de coiffure</span>
+              <span>HAIR SALON</span>
             </LogoContainer>
           </Box>
         </Flex>
         <Flex flexWrap='wrap'>
           <Box px={10} width={[1, 0.5, 160/340]}>
             <Item>
-              Salons de coiffure 1er arr. Paris et Daikanyama Tokyo.
+              Hair Salons in Paris and Daikanyama Tokyo.
               <br/>
               <br/>
               🇫🇷パリで働きたい美容師さん誰かいませんか？
@@ -66,17 +66,15 @@ export default class Index extends React.Component {
                 1-24-7 Ebisunishi Shibuyaku 150-0021 Tokyo,Japan
               </Link>
               <br/>
-              Station de Daikanyama, station d'Ebisu
+              Daikanyama Station,Ebisu Station
               <br/>
               Closed
               {' '}
-              Fermé
-              {' '}
-              mercredi
+              Wednesday
               <br/>
               11:00-20:00
               <br/>
-              Téléphone
+              Phone
               {' '}
               <a href='tel:+81-3-5428-0039'>
                 +81-3-5428-0039
@@ -91,10 +89,10 @@ export default class Index extends React.Component {
               <a href='mailto:tokyo@superstars.jp'>tokyo@superstars.jp</a>
               <br/>
               <br/>
-              Coupe 6500yen~<br/>
-              Coloration 6000yen~<br/>
-              Permanente 7000yen~<br/>
-              Soins 2000yen~<br/>
+              Cut 6500yen~<br/>
+              Color 6000yen~<br/>
+              Permanent 7000yen~<br/>
+              Treatment 2000yen~<br/>
             </Item>
             <Item title='Paris'>
               <Link href='http://goo.gl/maps/klacH'>
@@ -103,13 +101,13 @@ export default class Index extends React.Component {
               <br/>
               Metro Tuileries, Metro Pyramids
               <br/>
-              Fermé
+              Closed
               {' '}
-              Le lundi
+              Monday
               <br/>
               11:00-19:00
               <br/>
-              Téléphone
+              Phone
               {' '}
               <a href='tel:33-142603710'>+33-1.42.60.37.10</a>
               <br/>
@@ -122,9 +120,9 @@ export default class Index extends React.Component {
               <a href='mailto:paris@superstars.jp'>paris@superstars.jp</a>
               <br/>
               <br/>
-              Coupe 80euros~<br/>
-              Coloration 70euros~<br/>
-              Permanente 80euros~<br/>
+              Cut 80euro~<br/>
+              Color 70euro~<br/>
+              Permanent 80euro~<br/>
             </Item>
           </Box>
           <Box px={10} width={[1, 0.5, 90/340]}>
@@ -145,13 +143,13 @@ export default class Index extends React.Component {
             </Item>
           </Box>
           <Box px={10} width={[1, 0.5, 90/340]}>
-            <Item title='Mettre à jour'>
+            <Item title='Updates'>
               <form
                 action='//superstars.us10.list-manage.com/subscribe/post?u=bb759fc6f988fc3409d847443&amp;id=13e60509f6'
                 method='post'
                 target='_blank'
               >
-                Entrez votre adresse email pour recevoir des mises à jour<br/>
+                Enter your email address to receive updates.<br/>
                 <EmailInput type='email' name='EMAIL'/>
                 <input type='hidden' name='b_bb759fc6f988fc3409d847443_13e60509f6' value=''/>
                 <SubscribeButton type='submit' value='Subscribe' name='subscribe'/>
