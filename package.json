@@ -12,15 +12,19 @@
   },
   "dependencies": {
     "cloudflare-cli": "^3.2.5",
-    "gatsby": "^2.13.46",
-    "gatsby-link": "^2.2.4",
-    "gatsby-plugin-styled-components": "^3.1.2",
-    "gatsby-source-filesystem": "^2.1.8",
-    "gh-pages": "^2.1.0",
+    "gatsby": "^2.19.19",
+    "gatsby-link": "^2.2.29",
+    "gatsby-plugin-styled-components": "^3.1.19",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gh-pages": "^2.2.0",
     "grid-styled": "^5.0.2",
-    "npm-check-updates": "^3.1.20",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
+    "npm-check-updates": "^4.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "react-helmet": "^5.2.1"
   }
 }

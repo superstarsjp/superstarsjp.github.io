@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 const GlobalStyle = createGlobalStyle`
   @import url(https://afeld.github.io/emoji-css/emoji.css);
@@ -48,6 +49,9 @@ export default class Layout extends React.Component {
     const { lang, children } = this.props
     return (
       <>
+        <Helmet title='SUPERSTARS' defer={false}>
+          <meta name='format-detection' content='telephone=no'/>
+        </Helmet>
         <GlobalStyle/>
         <Container>
           <LangSwitch>
