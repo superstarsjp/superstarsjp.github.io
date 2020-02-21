@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{202:function(e,a){e.exports={data:{site:{siteMetadata:{title:"SUPERSTARS",description:"Hello! we are SUPERSTARS",email:"info@superstars.jp",languages:{defaultLangKey:"en",langs:["en","fr","ja"]}}}},layoutContext:{}}}});
-//# sourceMappingURL=path----026575b9a2b878b13a6d.js.map
