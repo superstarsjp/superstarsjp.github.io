@@ -131,19 +131,16 @@ export default class Index extends React.Component {
           </Box>
           <Box px={10} width={[1, 0.5, 90/340]}>
             <Item title='インスタグラム'>
-              <Link href='http://instagram.com/superstars.hairsalon'/>
+              <Link href='http://instagram.com/superstars.hairsalon'>@superstars.hairsalon</Link>
             </Item>
             <Item title='フェイスブック'>
-              <Link href='https://www.facebook.com/superstars.hairsalon'/>
+              <Link href='https://www.facebook.com/superstars.hairsalon'>superstars.hairsalon</Link>
             </Item>
             <Item title='ツイッター'>
-              <Link href='https://twitter.com/Superstars_jp'/>
+              <Link href='https://twitter.com/Superstars_jp'>@Superstars_jp</Link>
             </Item>
             <Item title='Youtube'>
-              <Link href='https://www.youtube.com/user/superstars75001/videos'/>
-            </Item>
-            <Item title='Origami'>
-              <Link href='http://origami.co/superstars'/>
+              <Link href='https://www.youtube.com/user/superstars75001/videos'>superstars75001</Link>
             </Item>
           </Box>
           <Box px={10} width={[1, 0.5, 90/340]}>

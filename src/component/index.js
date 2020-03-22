@@ -3,10 +3,8 @@ import styled from 'styled-components'
 import { Flex, Box } from 'grid-styled'
 
 export const Link = styled.a.attrs(props => ({
-  target: props.target || '_blank',
-  children: props.children || props.href
+  target: props.target || '_blank'
 }))`
-  word-break: break-word;
 `
 const Label = styled(Box)`
   overflow: hidden;
